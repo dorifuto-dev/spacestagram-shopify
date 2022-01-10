@@ -1,13 +1,14 @@
 import dayjs from 'dayjs';
 
 export const cleanNasaData = (data) => {
-  return data.photos.map(roverObj => {
+  return data.map(imgObject => {
     return {
-      id: roverObj.id,
-      imageSource: roverObj.img_src,
-      roverName: roverObj.rover.name,
-      cameraName: roverObj.camera.full_name,
-      date: dayjs(roverObj.earth_date).format('MMMM D, YYYY')
+      id: parseInt(imgObject.date.split("-").join("")),
+      date: dayjs(imgObject.date).format("MMMM DD, YYYY"),
+      title: imgObject.title,
+      copyright: imgObject.copyright,
+      synopsis: imgObject.explanation,
+      imgUrl: imgObject.url
     }
   })
 }

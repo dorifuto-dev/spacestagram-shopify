@@ -1,0 +1,5 @@
+.image-card-photo {
+  width: 95vw;
+  height: 10em;
+  object-fit: cover;
+}

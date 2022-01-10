@@ -2,6 +2,7 @@ import './App.css';
 import { useState, useEffect } from 'react';
 import { fetchData } from '../../apiCalls';
 import { cleanNasaData } from '../../dataCleaning';
+import ImageContainer from '../ImageContainer/ImageContainer';
 
 const App = () => {
 
@@ -19,7 +20,7 @@ const App = () => {
   }
 
   const fetchNasaData = () => {
-    fetchData("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&page=2&api_key=gNVAgni9T0aFJiqkENzREtHUzQXk79AchIYNH2lZ")
+    fetchData("https://api.nasa.gov/planetary/apod?start_date=2021-12-01&end_date=2021-12-27&api_key=gNVAgni9T0aFJiqkENzREtHUzQXk79AchIYNH2lZ")
       .then(data => cleanNasaData(data))
       .then(data => setNasaData(data))
   }
@@ -27,7 +28,7 @@ const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-
+        <ImageContainer imageData={nasaData} />
       </header>
     </div>
   );
