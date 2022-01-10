@@ -4,7 +4,7 @@ import ImageCard from '../ImageCard/ImageCard';
 const ImageContainer = ({imageData}) => {
 
   const imagesArray = imageData.map(image => {
-    return <ImageCard singleImgData={image} />
+    return <ImageCard key={image.id} singleImgData={image} />
   })
 
   return (
