@@ -1,5 +1,19 @@
-.image-card-photo {
+.image-card-link {
+  text-decoration: none;
+  color: white;
+}
+
+.image-card {
   width: 95vw;
-  height: 10em;
+  height: 22em;
+}
+
+.image-card-photo {
+  width: 100%;
+  height: 15em;
   object-fit: cover;
+}
+
+.image-card-title, .image-card-date {
+  margin-left: 0.5em;
 }
