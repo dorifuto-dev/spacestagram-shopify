@@ -1,29 +1,32 @@
 import './DetailCard.css';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
-const DetailCard = ({ imageData }) => {
+const DetailCard = ({ imageData, toggleImageLike }) => {
 
   const { id } = useParams('id');
 
   const currentImage = imageData && imageData.find(image => {
-    return id === JSON.stringify(image.id)
+    return JSON.stringify(image.id) === id
   });
-  
-  console.log(currentImage)
+
+  const { title, copyright, date, synopsis, imgUrl, isLiked } = currentImage && currentImage
 
   return (
     <article className="detail-card">
+      <Link to="/">Back to Home</Link>
       { currentImage && 
         <>
+          { isLiked ? <p>Liked</p> : <p>Not Liked</p> }
           <header className="detail-card-header">
-            <img className="detail-card-image" alt={currentImage.title} src={currentImage.imgUrl}></img>
+            <img className="detail-card-image" alt={title} src={imgUrl}></img>
           </header>
-          <body className="detail-card-text">
-            <h1 className="detail-card-title">{currentImage.title}</h1>
-            <p className="detail-card-copyright">{currentImage.copyright}</p>
-            <p className="detail-card-date">{currentImage.date}</p>
-            <p className="detail-card-synopsis">{currentImage.synopsis}</p>
-          </body>
+          <footer className="detail-card-text">
+            <h1 className="detail-card-title">{title}</h1>
+            <p className="detail-card-copyright">{copyright}</p>
+            <p className="detail-card-date">{date}</p>
+            <p className="detail-card-synopsis">{synopsis}</p>
+            <button className="detail-card-like" onClick={() => toggleImageLike(id)}>LIKE</button>
+          </footer>
         </> 
       }
     </article>
@@ -31,5 +34,3 @@ const DetailCard = ({ imageData }) => {
 }
 
 export default DetailCard;
-
-  //  {/*  */}
