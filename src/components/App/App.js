@@ -18,9 +18,21 @@ const App = () => {
 
   const fetchNasaData = () => {
     trackPromise(
-    fetchData("https://api.nasa.gov/planetary/apod?start_date=2021-12-01&end_date=2021-12-27&api_key=gNVAgni9T0aFJiqkENzREtHUzQXk79AchIYNH2lZ")
+    fetchData("https://api.nasa.gov/planetary/apod?start_date=2021-12-10&end_date=2021-12-25&api_key=gNVAgni9T0aFJiqkENzREtHUzQXk79AchIYNH2lZ")
       .then(data => cleanNasaData(data))
       .then(data => setNasaData(data)))
+  }
+
+  const toggleImageLike = (id) => {
+    const updatedNasaData = nasaData.map(image => {
+      if (id == image.id) {
+        image.isLiked = !image.isLiked;
+        return image;
+      } else {
+        return image;
+      }
+    })
+    setNasaData(updatedNasaData)
   }
 
   return (
@@ -30,10 +42,9 @@ const App = () => {
         <p className="spacestagram-subheading">Brought to you by NASA's Astronomy Picture of the Day API.</p>
         <LoaderSpinner />
         <Routes>
-          <Route exact path="/" element={<ImageContainer imageData={nasaData} />}>
+          <Route exact path="/" element={<ImageContainer imageData={nasaData} toggleImageLike={toggleImageLike} />}>
           </Route>
-          <Route exact path="/:id" element={<DetailCard imageData={nasaData} />}>
-
+          <Route exact path="/:id" element={<DetailCard imageData={nasaData} toggleImageLike={toggleImageLike} />}>
           </Route>
         </Routes>
       </header>
