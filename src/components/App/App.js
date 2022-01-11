@@ -3,8 +3,10 @@ import { useState, useEffect } from 'react';
 import { fetchData } from '../../apiCalls';
 import { cleanNasaData } from '../../dataCleaning';
 import { trackPromise } from 'react-promise-tracker';
+import { Route, Routes } from 'react-router-dom';
 import LoaderSpinner from '../LoaderSpinner/LoaderSpinner';
 import ImageContainer from '../ImageContainer/ImageContainer';
+import DetailCard from '../DetailCard/DetailCard';
 
 const App = () => {
 
@@ -22,14 +24,21 @@ const App = () => {
   }
 
   return (
-    <div className="App">
-      <header className="App-header">
+    <main className="main-container">
+      <header className="main-header">
         <h1 className="spacestagram-logo">Spacestagram</h1>
         <p className="spacestagram-subheading">Brought to you by NASA's Astronomy Picture of the Day API.</p>
         <LoaderSpinner />
-        <ImageContainer imageData={nasaData} />
+        <Routes>
+          <Route exact path="/" element={<ImageContainer imageData={nasaData} />}>
+          </Route>
+          <Route exact path="/:id" element={<DetailCard imageData={nasaData} />}>
+
+          </Route>
+        </Routes>
       </header>
-    </div>
+    </main>
+    
   );
 }
 
