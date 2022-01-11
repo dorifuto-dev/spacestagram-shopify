@@ -8,7 +8,8 @@ export const cleanNasaData = (data) => {
       title: imgObject.title,
       copyright: imgObject.copyright,
       synopsis: imgObject.explanation,
-      imgUrl: imgObject.url
+      imgUrl: imgObject.url,
+      isLiked: false
     }
   })
 }
