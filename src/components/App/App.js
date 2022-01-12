@@ -18,7 +18,7 @@ const App = () => {
 
   const fetchNasaData = () => {
     trackPromise(
-    fetchData("https://api.nasa.gov/planetary/apod?start_date=2021-12-10&end_date=2021-12-25&api_key=gNVAgni9T0aFJiqkENzREtHUzQXk79AchIYNH2lZ")
+    fetchData("https://api.nasa.gov/planetary/apod?start_date=2021-12-16&end_date=2021-12-25&api_key=MEDNcZSPhOUJrNsjUhQdxSthGKcS3Pe0qeIx3OdR")
       .then(data => cleanNasaData(data))
       .then(data => setNasaData(data)))
   }
@@ -36,10 +36,11 @@ const App = () => {
   }
 
   return (
-    <main className="main-container">
-      <header className="main-header">
-        <h1 className="spacestagram-logo">Spacestagram</h1>
-        <p className="spacestagram-subheading">Brought to you by NASA's Astronomy Picture of the Day API.</p>
+      <main className="app-main">
+        <header className="app-header">
+          <h1 className="spacestagram-logo">Spacestagram</h1>
+          <p className="spacestagram-subheading">Brought to you by NASA's Astronomy Picture of the Day API.</p>
+        </header>
         <LoaderSpinner />
         <Routes>
           <Route exact path="/" element={<ImageContainer imageData={nasaData} toggleImageLike={toggleImageLike} />}>
@@ -47,9 +48,7 @@ const App = () => {
           <Route exact path="/:id" element={<DetailCard imageData={nasaData} toggleImageLike={toggleImageLike} />}>
           </Route>
         </Routes>
-      </header>
-    </main>
-    
+      </main>
   );
 }
 
