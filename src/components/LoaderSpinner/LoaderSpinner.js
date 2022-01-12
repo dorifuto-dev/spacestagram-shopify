@@ -15,7 +15,7 @@ const LoaderSpinner = (props) => {
           alignItems: "center"
         }}
       >
-        <Audio />
+        <Audio color="#1687A7" />
       </section>
 }
 
