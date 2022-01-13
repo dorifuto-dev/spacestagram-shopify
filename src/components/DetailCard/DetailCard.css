@@ -1,0 +1,54 @@
+.detail-card {
+  width: 100vw;
+  padding-bottom: 1em;
+  position: absolute;
+  top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail-card-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.detail-buttons-container {
+  width: 100%;
+  height: 2.3em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.go-back-icon {
+  height: 2.5em;
+  width: 2.5em;
+  background-color: transparent;
+}
+
+.detail-like-button {
+  text-decoration: none;
+  height: 3.5em;
+  width: 3.5em;
+  background-color: inherit;
+  border: 0;
+  margin-left: 1em;
+}
+
+.detail-liked-icon, .detail-unliked-icon {
+  height: 3.5em;
+  width: 3.5em;
+}
+
+footer {
+  width: 95vw;
+}
+
+.detail-card-title {
+  padding-bottom: 0.2em;
+  border-bottom: 1px solid #D3E0EA;
+}
+
+.detail-card-copyright, .detail-card-date {
+  font-size: 0.8em;
+}
