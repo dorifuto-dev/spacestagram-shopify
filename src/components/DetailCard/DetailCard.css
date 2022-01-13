@@ -1,8 +1,13 @@
 .detail-card {
   width: 100vw;
   padding-bottom: 1em;
-  position: absolute;
-  top: 6rem;
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail-card-header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,8 +19,9 @@
 }
 
 .detail-buttons-container {
-  width: 100%;
+  width: 90%;
   height: 2.3em;
+  margin: 0.5em 0em 0em;
   display: flex;
   justify-content: space-between;
 }
@@ -47,8 +53,18 @@ footer {
 .detail-card-title {
   padding-bottom: 0.2em;
   border-bottom: 1px solid #D3E0EA;
+  text-align: center;
 }
 
 .detail-card-copyright, .detail-card-date {
   font-size: 0.8em;
+  text-align: center;
+}
+
+.detail-card-copyright {
+  margin-top: 0.3em;
+}
+
+.detail-card-date {
+  margin-bottom: 0.5em;
 }
