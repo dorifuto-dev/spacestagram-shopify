@@ -11,13 +11,13 @@ const ImageContainer = ({imageData, toggleImageLike }) => {
         toggleImageLike={toggleImageLike} 
       />
     )
-  })
+  });
 
   return (
     <section className="images-container">
       {imagesArray}
     </section>
   );
-}
+};
 
 export default ImageContainer;

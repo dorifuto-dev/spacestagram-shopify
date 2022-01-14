@@ -77,7 +77,7 @@
     border-radius: 1rem;
     flex-direction: row;
     border: 1px solid #276678;
-    box-shadow: 5px 5px 15px rgb(39 102 120 / 0.2);
+    box-shadow: 5px 10px 30px rgb(39 102 120 / 0.2);
   }
 
   .detail-card-header {
@@ -103,7 +103,7 @@
 
   .detail-liked-icon:hover, .detail-unliked-icon:hover {
     cursor: pointer;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.2s ease-in-out;
     transform: scale(1.2);
   }
 
