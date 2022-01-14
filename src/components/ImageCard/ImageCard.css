@@ -24,24 +24,26 @@
 
 .like-button {
   border: 0;
+  height: 2.5rem;
+  width: 2.5rem;
   background-color: inherit;
+  margin-right: 2rem;
 }
 
 .liked-icon, .unliked-icon {
   height: 2.5rem;
   width: 2.5rem;
-  margin-right: 1rem;
 }
 
 .image-card-title {
   margin-top: 0.5em;
-  padding-bottom: 0.5em;
+  
   border-bottom: 1px solid #D3E0EA;
 }
 
 .image-card-title, .image-card-date {
-  margin-left: 0.5rem;
-  max-width: 95vw;
+  max-width: 100%;
+  padding: 0.5em;
 }
 
 @media screen and (min-width: 768px) {
@@ -62,8 +64,7 @@
   }
 
   .liked-icon, .unliked-icon {
-    right: 5em;
-    /* top: -10em; */
+    margin-right: 5em;
   }
 
   .liked-icon:hover, .unliked-icon:hover {
@@ -73,7 +74,7 @@
   }
 
   .unliked-icon:hover {
-    filter: saturate(3041%) brightness(80%) contrast(100%);
+    filter: brightness(0) saturate(100%) invert(74%) sepia(8%) saturate(3063%) hue-rotate(168deg) brightness(97%) contrast(84%);
   }
   
   .liked-icon:hover {
