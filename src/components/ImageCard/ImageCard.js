@@ -17,6 +17,7 @@ const ImageCard = ({ singleImgData, toggleImageLike }) => {
         </Link>
       </header>
       <footer className="image-card-footer">
+        <p className="image-card-date">{date}</p>
         {isLiked ? 
           <button className="like-button" onClick={() => toggleImageLike(id)}>
             <img className="liked-icon" alt="Liked icon" src={redHeart}></img>
@@ -24,10 +25,7 @@ const ImageCard = ({ singleImgData, toggleImageLike }) => {
           <button className="like-button" onClick={() => toggleImageLike(id)}>
             <img className="unliked-icon" alt="Unliked icon" src={emptyHeart}></img>
           </button>
-        }
-        
-        <p className="image-card-date">{date}</p>
-        
+        } 
       </footer>
     </article>
   );
