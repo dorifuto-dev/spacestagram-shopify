@@ -29,6 +29,6 @@ const ImageCard = ({ singleImgData, toggleImageLike }) => {
       </footer>
     </article>
   );
-}
+};
 
 export default ImageCard;
