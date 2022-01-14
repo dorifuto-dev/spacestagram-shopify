@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Spacestagram
+Shopify Frontend Developer Intern Challenge - Summer 2022
+## Deployed site
+### [Check it out on Surge.sh](https://spacestagram-shopify.surge.sh/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Desktop View
+![spacestagram1](https://user-images.githubusercontent.com/75854628/149461843-743d46fc-151a-41a9-87c8-15ce21f9835d.png)
+![spacestagram2](https://user-images.githubusercontent.com/75854628/149461956-6e44c7ff-6ff9-41b5-b4a2-bfe99dadef12.png)
 
-## Available Scripts
+## Mobile View
+<p float="left">
+  <img alt="spacestagram three" src="https://user-images.githubusercontent.com/75854628/149462179-58d22bb5-3ba6-460d-b5e5-8a26fe9857bf.png" width="450" />
+  <img alt="spacestagram four" src="https://user-images.githubusercontent.com/75854628/149462231-06ffa7f0-6a26-4fdf-bcc5-bb5bbab03764.png" width="450" />
+</p>
 
-In the project directory, you can run:
+## Github Repositories
+- [spacestagram-shopify](https://github.com/dorifuto-dev/spacestagram-shopify)
 
-### `npm start`
+## Abstract
+  Spacestagram is a Frontend Developer Intern challenge brought to you by NASA's Astronomy Photo of the Day API and Shopify. The theme of the challenge was inspired by Shopify's mission to Make Commerce Better for Everyone, including whole entire universe. The application fetches image and description data from NASA's API, and a user can both like and unlike a photo, as well as click on an image to view its description.
+ 
+  The application was built with React v17.0.2 and React Router v6.2.1. 
+  
+## Additional Features
+- React Router to keep UI in sync with URL
+- Like button animation integrated with state
+- Responsive design
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Local Setup Instuctions
+- `git clone` this repository
+- `cd` into the repository in your terminal
+- `npm i` to install required dependencies
+- Then `npm start` in your terminal to view it on your browser
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 
-### `npm test`
+## Contributors
+- [Eric Li](https://github.com/dorifuto-dev) 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Specs
+  - The project spec & rubric can be found [here](https://docs.google.com/document/d/13zXpyrC2yGxoLXKktxw2VJG2Jw8SdUfliLM-bYQLjqE/edit)
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
