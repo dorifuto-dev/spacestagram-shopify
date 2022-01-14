@@ -19,6 +19,7 @@ const App = () => {
   const fetchNasaData = () => {
     trackPromise(
     fetchData("https://api.nasa.gov/planetary/apod?start_date=2021-12-11&end_date=2021-12-25&api_key=MEDNcZSPhOUJrNsjUhQdxSthGKcS3Pe0qeIx3OdR")
+      .then(data => console.log(data))
       .then(data => cleanNasaData(data))
       .then(data => setNasaData(data)))
   };

@@ -1,8 +1,15 @@
 describe('Spacestagram - User Flows', () => {
 
   beforeEach(() => {
+    
     cy.intercept('https://api.nasa.gov/planetary/apod?start_date=2021-12-11&end_date=2021-12-25&api_key=MEDNcZSPhOUJrNsjUhQdxSthGKcS3Pe0qeIx3OdR**')
     cy.visit('http://localhost:3000/')
+       // cy.intercept('GET', 'https://api.nasa.gov/planetary/apod?start_date=2021-12-01&end_date=2021-12-25&api_key=MEDNcZSPhOUJrNsjUhQdxSthGKcS3Pe0qeIx3OdR', 
+    //   { 
+    //     statusCode: 201,
+    //     fixture: 'images.json' 
+    //   }
+    // )
   })
 
   it('Should have a default homepage URL', () => {
