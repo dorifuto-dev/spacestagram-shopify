@@ -36,8 +36,6 @@
 }
 
 .image-card-title {
-  margin-top: 0.5em;
-  
   border-bottom: 1px solid #D3E0EA;
 }
 
@@ -45,7 +43,6 @@
   max-width: 100%;
   padding: 0.5em;
 }
-
 
 @media screen and (min-width: 768px) {
 
@@ -55,7 +52,7 @@
     margin: 1em;
     font-size: 1.2rem;
     border-radius: 0.8rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.3rem;
     box-shadow: 5px 5px 15px rgb(39 102 120 / 0.2);
   }
 
