@@ -6,9 +6,6 @@
 .image-card {
   width: 100vw;
   margin: 1em 0em;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
 }
 
 .image-card-photo {
@@ -18,24 +15,72 @@
 }
 
 .image-card-footer {
-  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.3em;
+}
+
+.like-button {
+  border: 0;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: inherit;
+  margin-right: 2rem;
 }
 
 .liked-icon, .unliked-icon {
-  position: absolute;
-  top: 0.6em;
-  right: 0em;
-  height: 3.5em;
-  width: 3.5em;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
 .image-card-title {
-  margin-top: 0.5em;
-  padding-bottom: 0.5em;
   border-bottom: 1px solid #D3E0EA;
 }
 
 .image-card-title, .image-card-date {
-  margin-left: 0.5em;
-  max-width: 95vw;
+  max-width: 100%;
+  padding: 0.5em;
+}
+
+@media screen and (min-width: 768px) {
+
+  .image-card {
+    border: 1px solid #276678;
+    width: 20em;
+    margin: 1em;
+    font-size: 1.2rem;
+    border-radius: 0.8rem;
+    padding-bottom: 0.3rem;
+    box-shadow: 5px 5px 15px rgb(39 102 120 / 0.2);
+  }
+
+  .image-card-photo {
+    height: 15em;
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+  }
+
+  .liked-icon, .unliked-icon {
+    margin-right: 5em;
+  }
+
+  .liked-icon:hover, .unliked-icon:hover {
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    transform: scale(1.2);
+  }
+
+  .unliked-icon:hover {
+    filter: brightness(0) saturate(100%) invert(74%) sepia(8%) saturate(3063%) hue-rotate(168deg) brightness(97%) contrast(84%);
+  }
+  
+  .liked-icon:hover {
+    filter: saturate(5000%) brightness(120%) contrast(80%);
+  }
+
+  .image-card:hover {
+    transition: all 0.4s ease-in-out;
+    transform: scale(1.05);
+  }
 }

@@ -6,7 +6,7 @@ import { usePromiseTracker } from 'react-promise-tracker';
 const LoaderSpinner = (props) => {
   
   const { promiseInProgress } = usePromiseTracker();
-  return promiseInProgress && <section
+  return promiseInProgress && <section className="loader-container"
         style={{
           width: "100%",
           height: "100",
@@ -16,6 +16,7 @@ const LoaderSpinner = (props) => {
         }}
       >
         <Audio color="#1687A7" />
+        <p className="loading-text">Loading...</p>
       </section>
 }
 
