@@ -46,15 +46,16 @@
   padding: 0.5em;
 }
 
+
 @media screen and (min-width: 768px) {
 
   .image-card {
     border: 1px solid #276678;
     width: 20em;
-    height: 22em;
     margin: 1em;
     font-size: 1.2rem;
     border-radius: 0.8rem;
+    padding-bottom: 0.5rem;
     box-shadow: 5px 5px 15px rgb(39 102 120 / 0.2);
   }
 
