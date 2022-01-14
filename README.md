@@ -9,8 +9,8 @@ Shopify Frontend Developer Intern Challenge - Summer 2022
 
 ## Mobile View
 <p float="left">
-  <img alt="spacestagram three" src="https://user-images.githubusercontent.com/75854628/149462179-58d22bb5-3ba6-460d-b5e5-8a26fe9857bf.png" width="450" />
-  <img alt="spacestagram four" src="https://user-images.githubusercontent.com/75854628/149462231-06ffa7f0-6a26-4fdf-bcc5-bb5bbab03764.png" width="450" />
+  <img alt="spacestagram three" src="https://user-images.githubusercontent.com/75854628/149462179-58d22bb5-3ba6-460d-b5e5-8a26fe9857bf.png" width="400" />
+  <img alt="spacestagram four" src="https://user-images.githubusercontent.com/75854628/149462231-06ffa7f0-6a26-4fdf-bcc5-bb5bbab03764.png" width="400" />
 </p>
 
 ## Github Repositories
