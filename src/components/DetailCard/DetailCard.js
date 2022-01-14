@@ -15,9 +15,9 @@ const DetailCard = ({ imageData, toggleImageLike }) => {
   const { title, copyright, date, synopsis, imgUrl, isLiked } = currentImage ? currentImage : "";
 
   return (
-    <article className="detail-card"> 
-      { currentImage && 
-        <>
+    <>
+      { currentImage &&  
+        <article className="detail-card"> 
           <header className="detail-card-header">
             <img className="detail-card-image" alt={title} src={imgUrl}></img>
           </header>
@@ -37,9 +37,9 @@ const DetailCard = ({ imageData, toggleImageLike }) => {
             <p className="detail-card-date">{date}</p>
             <p className="detail-card-synopsis">{synopsis}</p>
           </footer>
-        </> 
+        </article>
       }
-    </article>
+    </>
   );
 };
 
