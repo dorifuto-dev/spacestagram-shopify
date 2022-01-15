@@ -1,10 +1,8 @@
 describe('Spacestagram - User Flows', () => {
 
   beforeEach(() => {
-    
     cy.intercept('GET', 'https://api.nasa.gov/planetary/apod**', {fixture: 'images.json'})
-    cy.visit('http://localhost:3000/')
-    
+    cy.visit('http://localhost:3000/') 
   })
 
   it('Should have a default homepage URL', () => {
