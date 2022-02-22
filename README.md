@@ -24,7 +24,7 @@ Shopify Frontend Developer Intern Challenge - Summer 2022
 ## Additional Features
 - React Router to keep UI in sync with URL
 - Like button animation integrated with state
-- Responsive
+- Responsive design
 
 ### Local Setup Instuctions
 - `git clone` this repository
