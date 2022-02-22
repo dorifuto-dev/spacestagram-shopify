@@ -29,7 +29,7 @@ Shopify Frontend Developer Intern Challenge - Summer 2022
 ### Local Setup Instuctions
 - `git clone` this repository
 - `cd` into the repository in your terminal
-- `npm i` to install required dependencies
+- `npm i` to install required
 - Then `npm start` in your terminal to view it on your browser
 
 ## Technologies
