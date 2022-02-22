@@ -13,7 +13,7 @@ const App = () => {
   const [nasaData, setNasaData] = useState([]);
 
   useEffect(() => {
-    fetchNasaData;
+    fetchNasaData();
   }, []);
 
   const fetchNasaData = () => {
